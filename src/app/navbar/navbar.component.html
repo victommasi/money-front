@@ -1,0 +1,12 @@
+<nav class="navbar">
+  <div class="container">
+    <div class="ui-g">
+      <div class="ui-g-12">
+        <a href="javascript:;">
+          <p-slideMenu #menu [model]="items" [popup]="true"></p-slideMenu>
+          <button #btn type="button" pButton icon="fa fa-list" (click)="menu.toggle($event)"></button>
+        </a>
+      </div>
+    </div>
+  </div>
+</nav>
