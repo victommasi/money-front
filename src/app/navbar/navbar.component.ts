@@ -14,25 +14,11 @@ export class NavbarComponent implements OnInit {
     this.items = [
       {
         label: 'File',
-        items: [{
-          label: 'New',
-          icon: 'fa-plus',
-          items: [
-            {label: 'Project'},
-            {label: 'Other'},
-          ]
-        },
-          {label: 'Open'},
-          {label: 'Quit'}
-        ]
+        icon: 'fa-edit',
       },
       {
-        label: 'Edit',
+        label: 'Logout',
         icon: 'fa-edit',
-        items: [
-          {label: 'Undo', icon: 'fa-mail-forward'},
-          {label: 'Redo', icon: 'fa-mail-reply'}
-        ]
       }
     ];
 
