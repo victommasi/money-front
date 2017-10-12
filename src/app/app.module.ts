@@ -17,6 +17,7 @@ import {CalendarModule, DropdownModule, InputMaskModule, InputTextareaModule, Se
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import {CurrencyMaskModule} from 'ng2-currency-mask';
 import { PersonFormComponent } from './person-form/person-form.component';
+import { MessageComponent } from './message/message.component';
 
 @NgModule({
   declarations: [
@@ -26,7 +27,8 @@ import { PersonFormComponent } from './person-form/person-form.component';
     CustomerSearchComponent,
     ColoredFieldDirective,
     SaleFormComponent,
-    PersonFormComponent
+    PersonFormComponent,
+    MessageComponent
   ],
   imports: [
     BrowserModule,
