@@ -1,6 +1,6 @@
 <div class="ui-g container">
   <div class="ui-g-12">
-    <h1> Customer </h1>
+    <h1> Pessoas </h1>
   </div>
 
   <div class="ui-g-12 ui-fluid">
@@ -14,14 +14,14 @@
 
   <div class="ui-g">
     <div class="ui-g-12">
-      <p-dataTable [value]="customers" [rows]="5" [paginator]="true" [responsive]="true">
+      <p-dataTable [value]="people" [rows]="5" [paginator]="true" [responsive]="true">
         <p-column field="name" header="Name"></p-column>
         <p-column field="city" header="City"></p-column>
         <p-column field="dueDate" header="Due Date" styleClass="col-data"></p-column>
         <p-column field="payDate" header="Payment Date" styleClass="col-data"></p-column>
         <p-column field="status" header="Status" styleClass="col-valor">
-          <ng-template let-customer="rowData" pTemplate="body">
-            <span [style.color]="customer.status === 'INACTIVE' ? 'red' : 'blue'">{{customer.status}}</span>
+          <ng-template let-person="rowData" pTemplate="body">
+            <span [style.color]="person.status === 'INACTIVE' ? 'red' : 'blue'">{{person.status}}</span>
           </ng-template>
         </p-column>
         <p-column styleClass="col-acoes">

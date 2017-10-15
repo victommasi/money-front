@@ -1,16 +1,12 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 
 @Component({
-  selector: 'app-customer-search',
-  templateUrl: './customer-search.component.html',
-  styleUrls: ['./customer-search.component.css']
+  selector: 'app-person-search',
+  templateUrl: './person-search.component.html',
+  styleUrls: ['./person-search.component.css']
 })
-export class CustomerSearchComponent implements OnInit {
-
-  customers = [];
-
-  ngOnInit() {
-    this.customers = [
+export class PersonSearchComponent {
+  people = [
       { nome: 'Manoel Pinheiro', cidade: 'Uberlândia', estado: 'MG', ativo: true },
       { nome: 'Sebastião da Silva', cidade: 'São Paulo', estado: 'SP', ativo: false },
       { nome: 'Carla Souza', cidade: 'Florianópolis', estado: 'SC', ativo: true },
@@ -18,6 +14,4 @@ export class CustomerSearchComponent implements OnInit {
       { nome: 'Vilmar Andrade', cidade: 'Rio de Janeiro', estado: 'RJ', ativo: false },
       { nome: 'Paula Maria', cidade: 'Uberlândia', estado: 'MG', ativo: true }
     ];
-  }
-
 }
